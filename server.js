@@ -1,20 +1,20 @@
-var static = require('node-static');
-var http = require('http');
-var file = new(static.Server)();
-var app = http.createServer(function (req, res) {
-  file.serve(req, res);
-}).listen(2013);
+// var static = require('node-static');
+// var http = require('http');
+// var file = new(static.Server)();
+// var app = http.createServer(function (req, res) {
+//   file.serve(req, res);
+// }).listen(2013);
 
 
-// var express = require('express');
-// var app = express();
-// console.log(express.static(__dirname + '/js'));
-// app.use(express.static(__dirname + '/js'));
-// app.all('*', function(req, res){
-// 	res.sendfile("index.html");
-// });
+var express = require('express');
+var app = express();
+console.log(express.static(__dirname + '/js'));
+app.use(express.static(__dirname + '/js'));
+app.all('*', function(req, res){
+	res.sendfile("index.html");
+});
 
-// app.listen(9000);
+app.listen(9000);
 
 
 var io = require('socket.io').listen(app);
