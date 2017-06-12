@@ -10,7 +10,7 @@
     "ws": "0.4.x"
   },
   "engines": {
-    "node": "5.8.0"
+    "node": "0.12.0"
   },
   "scripts": {
     "start": "node server.js"
