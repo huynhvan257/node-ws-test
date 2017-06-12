@@ -14,7 +14,7 @@ app.all('*', function(req, res){
 	res.sendfile("index.html");
 });
 
-app.listen(9000);
+app.listen(80);
 
 var io = require('socket.io').listen(app);
 io.sockets.on('connection', function (socket){

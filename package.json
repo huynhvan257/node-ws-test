@@ -1,25 +1,18 @@
 {
-  "name": "signal-master",
-  "description": "Simple signaling server for SimpleWebRTC",
-  "version": "0.2.2",
-  "dependencies": {
-    "getconfig": "0.3.0",
-    "node-uuid": "1.2.0",
-    "socket.io": "0.9.16",
-    "yetify": "0.0.1"
-  },
-  "main": "server.js",
+  "name": "node-ws-test",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/heroku-examples/node-ws-test.git"
   },
-  "devDependencies": {
-    "socket.io-client": "0.9.16",
-    "precommit-hook": "0.3.10",
-    "tape": "^2.13.1"
+  "dependencies": {
+    "express": "^4.4.5",
+    "ws": "0.4.x"
   },
-  "license": "MIT",
+  "engines": {
+    "node": "0.12.0"
+  },
   "scripts": {
-    "test": "node test.js"
+    "start": "node server.js"
   }
-
+}
