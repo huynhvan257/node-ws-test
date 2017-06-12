@@ -16,7 +16,6 @@ app.all('*', function(req, res){
 
 app.listen(9000);
 
-
 var io = require('socket.io').listen(app);
 io.sockets.on('connection', function (socket){
 
